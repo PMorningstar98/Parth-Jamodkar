@@ -1,0 +1,19 @@
+[
+  { "name": "Threat Hunting", "group": "Core" },
+  { "name": "Detection Engineering", "group": "Core" },
+  { "name": "Threat Intelligence", "group": "Core" },
+  { "name": "Incident Response", "group": "Core" },
+  { "name": "Malware Analysis", "group": "Core" },
+  { "name": "Microsoft Defender XDR", "group": "Platforms" },
+  { "name": "Microsoft Sentinel", "group": "Platforms" },
+  { "name": "Azure", "group": "Platforms" },
+  { "name": "AWS", "group": "Platforms" },
+  { "name": "Cloud Security", "group": "Platforms" },
+  { "name": "MITRE ATT&CK", "group": "Frameworks" },
+  { "name": "AI Security", "group": "Frameworks" },
+  { "name": "Open Source Research", "group": "Frameworks" },
+  { "name": "KQL", "group": "Tools & Languages" },
+  { "name": "YARA", "group": "Tools & Languages" },
+  { "name": "Sigma", "group": "Tools & Languages" },
+  { "name": "Python", "group": "Tools & Languages" }
+]

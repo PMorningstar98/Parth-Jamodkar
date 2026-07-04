@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Threat Hunting",
+    "description": "Proactive investigation into attacker behavior across endpoints, identity, and cloud telemetry — hunting for what signature-based tools miss."
+  },
+  {
+    "name": "Detection Engineering",
+    "description": "Turning one-off findings into durable, high-fidelity detections — KQL, Sigma, and YARA logic built to survive contact with production noise."
+  },
+  {
+    "name": "AI Security",
+    "description": "How adversaries abuse AI systems and tooling, and how living-off-the-land thinking extends into AI-adjacent attack surfaces."
+  },
+  {
+    "name": "Cloud Security",
+    "description": "Detection and defense across Azure and AWS — identity abuse, misconfiguration, and cloud-native attack paths."
+  },
+  {
+    "name": "Supply Chain Security",
+    "description": "Tracing how trust in third-party software and update mechanisms becomes an attack vector, from compromise to detection."
+  },
+  {
+    "name": "Threat Intelligence",
+    "description": "Structuring and operationalizing intelligence so it drives hunts and detections, not just reports."
+  },
+  {
+    "name": "MITRE ATT&CK Mapping",
+    "description": "Mapping observed adversary behavior to ATT&CK to make research comparable, searchable, and actionable across teams."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ms-blog-author-hub",
+    "type": "publication",
+    "title": "Microsoft Security Blog — Author Hub",
+    "description": "Author profile and full archive of security research articles published on the official Microsoft Security Blog.",
+    "url": "https://www.microsoft.com/en-us/security/blog/author/parth-jomadkar/",
+    "source": "Microsoft Security Blog",
+    "date": "",
+    "categories": ["Threat Hunting", "Detection Engineering"],
+    "tags": ["Microsoft Defender XDR", "Threat Hunting"],
+    "featured": true
+  },
+  {
+    "id": "ms-community-hub",
+    "type": "publication",
+    "title": "Microsoft Tech Community — Security Experts Blog",
+    "description": "Community hub for deep-dive security research and analysis, co-authored with the Microsoft security research community.",
+    "url": "https://techcommunity.microsoft.com/",
+    "source": "Microsoft Community Hub",
+    "date": "",
+    "categories": ["Threat Hunting", "Threat Intelligence"],
+    "tags": ["Threat Intelligence"],
+    "featured": false
+  },
+  {
+    "id": "emeditor-supply-chain-analysis",
+    "type": "publication",
+    "title": "When Trust Becomes the Attack Vector: Analysis of the EmEditor Supply Chain Compromise",
+    "description": "A technical breakdown of a supply chain compromise affecting the EmEditor update mechanism, covering the attack path, detection opportunities, and defensive recommendations.",
+    "url": "https://techcommunity.microsoft.com/blog/microsoftsecurityexperts/when-trust-becomes-the-attack-vector-analysis-of-the-emeditor-supply-chain-compr/4499552",
+    "source": "Microsoft Community Hub",
+    "date": "",
+    "categories": ["Supply Chain Security", "Threat Hunting", "Detection Engineering"],
+    "tags": ["Supply Chain Security", "Malware Analysis", "Detection Engineering"],
+    "featured": true
+  },
+  {
+    "id": "cyberlab-con-2026",
+    "type": "talk",
+    "title": "CyberLab Con 2026",
+    "description": "Conference session — see the event schedule for the confirmed talk title, abstract, and time slot.",
+    "url": "https://www.cyberspeaklabs.com/schedule",
+    "source": "CyberLab Con",
+    "date": "2026",
+    "categories": ["Threat Hunting", "Detection Engineering"],
+    "tags": ["Public Speaking"],
+    "featured": true
+  },
+  {
+    "id": "lolai-pr-5",
+    "type": "opensource",
+    "title": "LOLAI Project — Pull Request #5",
+    "description": "Contribution to the LOLAI project, an open-source effort cataloguing living-off-the-land techniques relevant to AI systems and tooling.",
+    "url": "https://github.com/lolai-project/lolai-project.github.io/pull/5",
+    "source": "GitHub",
+    "date": "",
+    "categories": ["AI Security", "Threat Hunting"],
+    "tags": ["AI Security", "Open Source Research"],
+    "featured": false
+  },
+  {
+    "id": "lolai-pr-6",
+    "type": "opensource",
+    "title": "LOLAI Project — Pull Request #6",
+    "description": "Follow-up contribution to the LOLAI project, extending the project's catalogue of AI-relevant living-off-the-land entries.",
+    "url": "https://github.com/lolai-project/lolai-project.github.io/pull/6",
+    "source": "GitHub",
+    "date": "",
+    "categories": ["AI Security", "Threat Hunting"],
+    "tags": ["AI Security", "Open Source Research"],
+    "featured": false
+  },
+  {
+    "id": "lolai-merged-commit",
+    "type": "opensource",
+    "title": "LOLAI Project — Merged Commit",
+    "description": "A merged commit to the LOLAI project's public site, part of ongoing contributions to the AI-security open-source community.",
+    "url": "https://github.com/lolai-project/lolai-project.github.io/commit/1b1d31357075ccfe430027c35e54917d992678d6",
+    "source": "GitHub",
+    "date": "",
+    "categories": ["AI Security"],
+    "tags": ["AI Security", "Open Source Research"],
+    "featured": false
+  },
+  {
+    "id": "detection-rules-repo",
+    "type": "opensource",
+    "title": "Detection-Rules",
+    "description": "A personal, curated collection of detection rules for threat hunting and detection engineering, written for common detection surfaces and query languages.",
+    "url": "https://github.com/PMorningstar98/Detection-rules",
+    "source": "GitHub",
+    "date": "",
+    "categories": ["Detection Engineering", "Threat Hunting"],
+    "tags": ["KQL", "Sigma", "YARA", "Detection Engineering"],
+    "featured": true
+  },
+  {
+    "id": "lolbas-fork",
+    "type": "opensource",
+    "title": "LOLBAS (Fork)",
+    "description": "Fork of the Living Off The Land Binaries and Scripts (LOLBAS) project, used to track and contribute to community research on abusable native binaries.",
+    "url": "https://github.com/PMorningstar98/LOLBAS",
+    "source": "GitHub",
+    "date": "",
+    "categories": ["Threat Hunting", "Detection Engineering"],
+    "tags": ["Threat Hunting", "Open Source Research"],
+    "featured": false
+  },
+  {
+    "id": "medium-blog",
+    "type": "blog",
+    "title": "Medium — Personal Research Blog",
+    "description": "Long-form personal writing on threat hunting, detection engineering, and security research, published outside of official Microsoft channels.",
+    "url": "https://medium.com/@parth7378785501",
+    "source": "Medium",
+    "date": "",
+    "categories": ["Threat Hunting", "Detection Engineering"],
+    "tags": ["Threat Hunting"],
+    "featured": true
+  }
+]

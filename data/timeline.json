@@ -1,0 +1,38 @@
+[
+  {
+    "id": "started-cybersecurity",
+    "year": "",
+    "title": "Started in Cybersecurity",
+    "description": "Began working in security, building the foundation in incident response, malware analysis, and defensive tooling that later shaped a focus on threat hunting."
+  },
+  {
+    "id": "joined-microsoft",
+    "year": "",
+    "title": "Joined Microsoft",
+    "description": "Joined Microsoft, working with Microsoft Defender XDR and Microsoft Sentinel on detection engineering and threat hunting at scale."
+  },
+  {
+    "id": "microsoft-publications",
+    "year": "",
+    "title": "First Microsoft Publication",
+    "description": "Began publishing security research through official Microsoft channels, including the Microsoft Security Blog and Microsoft Tech Community."
+  },
+  {
+    "id": "conference-speaker",
+    "year": "2026",
+    "title": "Conference Speaker",
+    "description": "Took the stage as a conference speaker, starting with CyberLab Con 2026, sharing threat hunting and detection engineering research with the community."
+  },
+  {
+    "id": "open-source-contributions",
+    "year": "",
+    "title": "Open Source Contributions",
+    "description": "Started contributing to community open-source security projects, including LOLBAS and the LOLAI project, alongside maintaining a personal detection rules repository."
+  },
+  {
+    "id": "ai-security-research",
+    "year": "",
+    "title": "AI Security Research",
+    "description": "Expanded research into AI security — mapping how living-off-the-land and adversarial techniques apply to AI systems and tooling."
+  }
+]
