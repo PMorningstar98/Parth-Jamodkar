@@ -1,12 +1,28 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
-  // Static export so the whole site can be hosted on GitHub Pages,
-  // Vercel, Netlify, S3, or any plain file host — no Node server required.
-  output: 'export',
+  // Export as a static site for GitHub Pages
+  output: "export",
+
+  // Generate trailing slashes (recommended for GitHub Pages)
   trailingSlash: true,
+
+  // Disable Next.js image optimization (required for static export)
   images: {
     unoptimized: true,
   },
+
+  // GitHub Pages configuration
+  basePath: isProd ? "/Parth-Jamodkar" : "",
+  assetPrefix: isProd ? "/Parth-Jamodkar/" : "",
+
+  // Disable the "Powered by Next.js" header
+  poweredByHeader: false,
+
+  // Enable React strict mode
+  reactStrictMode: true,
 };
 
 export default nextConfig;
