@@ -5,8 +5,8 @@
   "roles": ["Threat Hunter", "Security Researcher", "Detection Engineer"],
   "tagline": "Hunting for knowns and unknowns.",
   "location": "",
-  "email": "your-email@example.com",
-  "summary": "Parth Jamodkar is a threat hunter and detection engineer researching how attackers move through modern cloud and endpoint environments, and how defenders can find them faster. His work spans threat hunting and detection engineering, threat intelligence, and cloud security, with a focus on Microsoft Defender XDR and Microsoft Sentinel as detection surfaces. Recent research applies AI security thinking to real-world intrusions, mapping adversary behavior to MITRE ATT&CK to turn one-off findings into durable, reusable detections. Parth publishes this work through Microsoft's security research channels, open-source detection content, and conference talks, with the goal of shortening the distance between a novel technique and a detection engineers can ship.",
+  "email": "parth7378785501@gmail.com",
+  "summary": "Parth Jamodkar is a threat hunter and detection engineer researching how attackers move through modern cloud/AI and endpoint environments, and how defenders can find them faster. His work spans threat hunting and detection engineering, threat intelligence,cloud security and AI security with a focus on Microsoft Defender XDR and Microsoft Sentinel as detection surfaces. Recent research applies AI security thinking to real-world intrusions, mapping adversary behavior to MITRE ATT&CK to turn one-off findings into durable, reusable detections. Parth publishes this work through Microsoft's security research channels, open-source detection content, and conference talks, with the goal of shortening the distance between a novel technique and a detection engineers can ship.",
   "social": {
     "github": "https://github.com/PMorningstar98",
     "linkedin": "https://www.linkedin.com/in/parth-jamodkar-7b3172160/",
