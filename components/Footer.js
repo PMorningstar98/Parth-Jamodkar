@@ -57,7 +57,7 @@ export default function Footer() {
                 <Link href="/contact" className="text-ink-muted hover:text-signal-blue">Contact</Link>
               </li>
               <li>
-                <a href="/rss.xml" className="text-ink-muted hover:text-signal-blue">RSS Feed</a>
+                <Link href="/rss.xml" className="text-ink-muted hover:text-signal-blue">RSS Feed</Link>
               </li>
             </ul>
           </div>

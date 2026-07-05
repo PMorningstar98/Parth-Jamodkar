@@ -67,12 +67,12 @@ export default function Hero() {
           >
             Research
           </Link>
-          <a
+          <Link
             href={site.resumeUrl}
             className="rounded-lg border border-line px-5 py-2.5 font-mono text-sm text-ink transition-colors hover:border-signal-blue/50 hover:text-signal-blue"
           >
             Download Résumé
-          </a>
+          </Link>
         </div>
       </div>
 

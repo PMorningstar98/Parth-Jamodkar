@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import SectionHeading from './SectionHeading';
 import ContentCard from './ContentCard';
 import content from '@/data/content.json';
@@ -58,9 +59,9 @@ export default function SearchClient() {
       {results.length === 0 && (
         <p className="mt-10 text-center font-mono text-sm text-ink-faint">
           No results. Try a different keyword — or browse{' '}
-          <a href="/public-work" className="text-signal-blue hover:underline">
+          <Link href="/public-work" className="text-signal-blue hover:underline">
             all public work
-          </a>
+          </Link>
           .
         </p>
       )}
