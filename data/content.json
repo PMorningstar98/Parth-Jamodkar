@@ -250,5 +250,41 @@
     "categories": ["Security Education"],
     "tags": ["Workshop", "Ethical Hacking", "Public Speaking"],
     "featured": false
+  },
+  {
+    "id": "jasper-sleet-insider-access",
+    "type": "publication",
+    "title": "Microsoft Defender Experts Disrupt Jasper Sleet's Insider Access Campaign",
+    "description": "Co-authored Microsoft Security Experts analysis of how Defender Experts detected and disrupted Jasper Sleet — a North Korea-nexus actor operating as a remote IT worker inside a live enterprise tenant — through proactive behavioral threat hunting.",
+    "url": "https://techcommunity.microsoft.com/blog/microsoftsecurityexperts/microsoft-defender-experts-disrupt-jasper-sleet%E2%80%99s-insider-access-campaign/4478112",
+    "source": "Microsoft Community Hub",
+    "date": "",
+    "categories": ["Threat Hunting", "Threat Intelligence"],
+    "tags": ["Insider Threat", "DPRK", "Threat Hunting"],
+    "featured": true
+  },
+  {
+    "id": "bhis-teal-book",
+    "type": "publication",
+    "title": "The Future of Threat Hunting: The Hunter is Dead, Long Live the Engineer",
+    "description": "Published author in the Black Hills Information Security (BHIS) InfoSec Survival Guide (Teal Book) on threat hunting — distributed in hard copy at the Antisyphon Threat Hunting Summit.",
+    "url": "https://spearphish-general-store.myshopify.com/products/the-infosec-survival-guide-teal-book-threat-hunting-digital",
+    "source": "Black Hills Information Security",
+    "date": "",
+    "categories": ["Threat Hunting", "Detection Engineering"],
+    "tags": ["Published Author", "Threat Hunting", "BHIS"],
+    "featured": true
+  },
+  {
+    "id": "seccon-14-tokyo",
+    "type": "talk",
+    "title": "Shadow Payroll, Digital Ghosts: Detecting Remote Doppelgangers in Enterprise Tenants",
+    "description": "International conference talk on insider-threat research into DPRK (Jasper Sleet) remote IT workers — using behavioral threat hunting to detect fraudulent remote employees embedded inside enterprise tenants.",
+    "url": "https://www.seccon.jp/14/seccon_conference/open_conference_en.html",
+    "source": "SECCON 14 · Tokyo",
+    "date": "2026",
+    "categories": ["Threat Hunting", "Threat Intelligence"],
+    "tags": ["Insider Threat", "DPRK", "Public Speaking"],
+    "featured": true
   }
 ]

@@ -1,10 +1,58 @@
 [
   {
+    "id": "sc-200",
+    "abbr": "SC-200",
+    "name": "Microsoft Certified: Security Operations Analyst Associate",
+    "issuer": "Microsoft",
+    "date": "",
+    "url": ""
+  },
+  {
     "id": "crta",
     "abbr": "CRTA",
     "name": "Certified Red Team Analyst (CRTA)",
     "issuer": "Cyberwarfare Labs",
     "date": "",
     "url": "https://www.credential.net/fa78f199-50c7-45f6-ac6f-027841eefddd"
+  },
+  {
+    "id": "cowa",
+    "abbr": "COWA",
+    "name": "Certified Offensive Windows API (COWA)",
+    "issuer": "Cyberwarfare Labs",
+    "date": "",
+    "url": ""
+  },
+  {
+    "id": "ceh",
+    "abbr": "CEH",
+    "name": "Certified Ethical Hacker (CEH)",
+    "issuer": "EC-Council",
+    "date": "",
+    "url": ""
+  },
+  {
+    "id": "ecsa",
+    "abbr": "ECSA",
+    "name": "EC-Council Certified Security Analyst (ECSA)",
+    "issuer": "EC-Council",
+    "date": "",
+    "url": ""
+  },
+  {
+    "id": "nessus",
+    "abbr": "Nessus",
+    "name": "Tenable Certified Nessus Professional",
+    "issuer": "Tenable",
+    "date": "",
+    "url": ""
+  },
+  {
+    "id": "qualys",
+    "abbr": "Qualys",
+    "name": "Qualys Vulnerability Management Specialist",
+    "issuer": "Qualys",
+    "date": "",
+    "url": ""
   }
 ]
