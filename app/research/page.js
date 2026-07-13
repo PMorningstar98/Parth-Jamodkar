@@ -20,8 +20,13 @@ export default function ResearchPage() {
       />
 
       <div className="space-y-16">
-        {categories.map((category) => {
-          const items = content.filter((item) => item.categories?.includes(category.name));
+        {(() => {
+          const seen = new Set();
+          return categories.map((category) => {
+          const items = content.filter(
+            (item) => item.categories?.includes(category.name) && !seen.has(item.id),
+          );
+          items.forEach((item) => seen.add(item.id));
           if (items.length === 0) return null;
 
           return (
@@ -37,7 +42,8 @@ export default function ResearchPage() {
               </div>
             </section>
           );
-        })}
+          });
+        })()}
       </div>
 
       <GlassCard hover={false} className="mt-16 text-center">
