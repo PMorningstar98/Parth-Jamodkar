@@ -14,13 +14,13 @@
   {
     "id": "ms-community-hub",
     "type": "publication",
-    "title": "Microsoft Tech Community — Security Experts Blog",
-    "description": "Community hub for deep-dive security research and analysis, co-authored with the Microsoft security research community.",
-    "url": "https://techcommunity.microsoft.com/",
-    "source": "Microsoft Community Hub",
-    "date": "",
+    "title": "Photo ZIP Campaign Targeting the Hospitality Industry Delivers a Node.js Implant for Persistent Access",
+    "description": "Analysis of an active multi-stage intrusion campaign targeting the hospitality industry across Europe and Asia — photo-themed ZIP lures, obfuscated PowerShell, a Node.js implant, dual registry persistence, and C2 over non-standard ports, including \"authentication laundering\" through trusted services.",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/06/25/photo-zip-campaign-targeting-hospitality-industry-delivers-node-js-implant-persistent-access/",
+    "source": "Microsoft Security Blog",
+    "date": "2026",
     "categories": ["Threat Hunting", "Threat Intelligence"],
-    "tags": ["Threat Intelligence"],
+    "tags": ["Node.js Implant", "Phishing", "Persistence", "Threat Intelligence"],
     "featured": false
   },
   {
