@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { AnimatePresence, motion } from 'framer-motion';
 import site from '@/data/site.json';
 
 const DecodeRain = dynamic(() => import('./DecodeRain'), { ssr: false });
@@ -13,24 +14,36 @@ export default function Hero() {
   useEffect(() => {
     const id = setInterval(() => {
       setRoleIndex((i) => (i + 1) % site.roles.length);
-    }, 2200);
+    }, 2600);
     return () => clearInterval(id);
   }, []);
 
   return (
     <section className="grid gap-10 py-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-14">
       <div className="animate-fade-up">
-        <p className="mb-5 font-mono text-sm text-signal-cyan">
+        <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-line-soft bg-panel/50 px-3 py-1 font-mono text-xs text-signal-cyan backdrop-blur-sm">
+          <span className="status-dot h-1.5 w-1.5 animate-pulse rounded-full bg-signal-cyan" />
           <span className="text-ink-faint">$</span> whoami
         </p>
 
-        <h1 className="font-mono text-4xl font-extrabold leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
-          {site.name}
+        <h1 className="glow-halo font-mono text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
+          <span className="text-gradient-animated">{site.name}</span>
         </h1>
 
-        <div className="mt-4 h-8 font-mono text-lg text-ink-muted sm:text-xl">
-          <span className="text-signal-blue">&gt; </span>
-          <span key={roleIndex}>{site.roles[roleIndex]}</span>
+        <div className="mt-4 flex h-8 items-center font-mono text-lg text-ink-muted sm:text-xl">
+          <span className="text-signal-blue">&gt;&nbsp;</span>
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={roleIndex}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.32, ease: 'easeOut' }}
+              className="text-ink"
+            >
+              {site.roles[roleIndex]}
+            </motion.span>
+          </AnimatePresence>
           <span className="prompt-caret" />
         </div>
 
@@ -41,9 +54,10 @@ export default function Hero() {
         <div className="mt-9 flex flex-wrap gap-3">
           <Link
             href="/publications"
-            className="rounded-lg bg-signal-blue px-5 py-2.5 font-mono text-sm font-semibold text-void shadow-glow transition-transform hover:-translate-y-0.5"
+            className="group inline-flex items-center gap-2 rounded-lg bg-signal-blue px-5 py-2.5 font-mono text-sm font-semibold text-void shadow-glow transition-all hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(76,124,243,0.5),0_10px_30px_rgba(76,124,243,0.35)]"
           >
             Microsoft Publications
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
           </Link>
           <a
             href={site.social.github}
@@ -73,6 +87,7 @@ export default function Hero() {
       <div className="relative h-72 overflow-hidden rounded-2xl border border-line-soft bg-panel/60 shadow-glass sm:h-96 lg:h-[26rem]">
         <DecodeRain className="absolute inset-0 h-full w-full" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent" />
+        <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-signal-blue/10" />
         <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-line-soft bg-void/70 px-3 py-1 font-mono text-[11px] text-ink-muted backdrop-blur-sm">
           <span className="h-1.5 w-1.5 rounded-full bg-signal-blue" /> known
           <span className="ml-2 h-1.5 w-1.5 rounded-full bg-signal-violet" /> unknown

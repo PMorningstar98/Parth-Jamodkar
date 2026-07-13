@@ -69,6 +69,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${jbMono.variable} dark`}>
       <body className="min-h-screen bg-void font-sans text-ink antialiased selection:bg-signal-blue/30">
+        <div className="aurora" aria-hidden="true" />
         <div className="pointer-events-none fixed inset-0 -z-10 bg-dot-grid opacity-60" />
         <Header />
         <main className="mx-auto min-h-[70vh] max-w-6xl px-5 pb-24 pt-28 sm:px-8">

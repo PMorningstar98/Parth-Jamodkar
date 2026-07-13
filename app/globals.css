@@ -58,10 +58,35 @@ input:focus-visible,
 /* ---------- Reusable primitives ---------- */
 
 .glass {
+  position: relative;
   background: linear-gradient(180deg, rgba(15, 19, 41, 0.72), rgba(11, 14, 29, 0.6));
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid #1E2444;
+  overflow: hidden;
+}
+
+/* Top sheen line that brightens on hover */
+.glass::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(76, 124, 243, 0.5), transparent);
+  opacity: 0.35;
+  transition: opacity 240ms ease;
+  pointer-events: none;
+}
+
+/* Radial spotlight glow, revealed on hover */
+.glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 80% at 50% 0%, rgba(76, 124, 243, 0.14), transparent 70%);
+  opacity: 0;
+  transition: opacity 260ms ease;
+  pointer-events: none;
 }
 
 .glass-hover {
@@ -69,8 +94,14 @@ input:focus-visible,
 }
 .glass-hover:hover {
   border-color: rgba(76, 124, 243, 0.45);
-  box-shadow: 0 0 0 1px rgba(76, 124, 243, 0.25), 0 12px 32px rgba(0, 0, 0, 0.5);
-  transform: translateY(-2px);
+  box-shadow: 0 0 0 1px rgba(76, 124, 243, 0.25), 0 16px 40px rgba(0, 0, 0, 0.55);
+  transform: translateY(-3px);
+}
+.glass-hover:hover::before {
+  opacity: 1;
+}
+.glass-hover:hover::after {
+  opacity: 1;
 }
 
 .bg-dot-grid {
@@ -78,6 +109,30 @@ input:focus-visible,
     radial-gradient(circle at 50% 0%, rgba(76, 124, 243, 0.14), transparent 60%),
     radial-gradient(rgba(139, 147, 184, 0.16) 1px, transparent 1px);
   background-size: 100% 100%, 26px 26px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 95%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 95%);
+}
+
+/* ---------- Aurora backdrop ---------- */
+.aurora {
+  position: fixed;
+  inset: -25% -15% auto -15%;
+  height: 75vh;
+  z-index: -20;
+  pointer-events: none;
+  background:
+    radial-gradient(42% 55% at 18% 18%, rgba(76, 124, 243, 0.22), transparent 70%),
+    radial-gradient(38% 50% at 82% 8%, rgba(157, 92, 255, 0.20), transparent 72%),
+    radial-gradient(34% 46% at 58% 40%, rgba(94, 234, 212, 0.12), transparent 70%);
+  filter: blur(50px);
+  opacity: 0.9;
+  animation: aurora-drift 20s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-drift {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(3%, 2%, 0) scale(1.08); }
+  100% { transform: translate3d(-3%, -1%, 0) scale(1.04); }
 }
 
 .text-gradient {
@@ -85,6 +140,59 @@ input:focus-visible,
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Animated shimmering gradient text */
+.text-gradient-animated {
+  background: linear-gradient(90deg, #4C7CF3, #9D5CFF, #5EEAD4, #4C7CF3);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-pan 8s ease infinite;
+}
+
+@keyframes gradient-pan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Soft glow halo behind hero heading */
+.glow-halo {
+  position: relative;
+}
+.glow-halo::before {
+  content: '';
+  position: absolute;
+  left: -8%;
+  top: -30%;
+  width: 60%;
+  height: 160%;
+  background: radial-gradient(closest-side, rgba(76, 124, 243, 0.22), transparent 75%);
+  filter: blur(28px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Animated underline for links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, #4C7CF3, #9D5CFF);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 240ms ease;
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
 }
 
 .eyebrow {

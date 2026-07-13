@@ -7,6 +7,7 @@ import site from '@/data/site.json';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
   // Close the mobile menu on route change
@@ -14,8 +15,22 @@ export default function Header() {
     setOpen(false);
   }, [pathname]);
 
+  // Track scroll to add depth/shadow to the header
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line-soft bg-void/70 backdrop-blur-md">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300 ${
+        scrolled
+          ? 'border-line bg-void/85 shadow-[0_8px_30px_rgba(0,0,0,0.45)] backdrop-blur-xl'
+          : 'border-line-soft bg-void/60 backdrop-blur-md'
+      }`}
+    >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link
           href="/"
@@ -34,11 +49,16 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-mono text-[13px] tracking-wide transition-colors ${
+                className={`relative font-mono text-[13px] tracking-wide transition-colors ${
                   active ? 'text-signal-blue' : 'text-ink-muted hover:text-ink'
                 }`}
               >
                 {item.label}
+                <span
+                  className={`absolute -bottom-1.5 left-0 h-px w-full origin-left bg-gradient-to-r from-signal-blue to-signal-violet transition-transform duration-300 ${
+                    active ? 'scale-x-100' : 'scale-x-0'
+                  }`}
+                />
               </Link>
             );
           })}

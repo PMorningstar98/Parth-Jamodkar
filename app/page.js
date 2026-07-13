@@ -5,6 +5,7 @@ import ContentCard from '@/components/ContentCard';
 import Timeline from '@/components/Timeline';
 import SkillsCloud from '@/components/SkillsCloud';
 import GlassCard from '@/components/GlassCard';
+import AnimatedCounter from '@/components/AnimatedCounter';
 import content from '@/data/content.json';
 
 export default function HomePage() {
@@ -76,7 +77,9 @@ function StatTile({ label, value, accent }) {
     accent === 'violet' ? 'text-signal-violet' : accent === 'cyan' ? 'text-signal-cyan' : 'text-signal-blue';
   return (
     <GlassCard hover={false} className="text-center">
-      <p className={`font-mono text-4xl font-extrabold ${accentClass}`}>{value}</p>
+      <p className={`font-mono text-4xl font-extrabold ${accentClass}`}>
+        <AnimatedCounter value={value} />
+      </p>
       <p className="mt-2 text-xs uppercase tracking-wide text-ink-muted">{label}</p>
     </GlassCard>
   );
