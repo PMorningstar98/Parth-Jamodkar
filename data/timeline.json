@@ -1,9 +1,15 @@
 [
   {
-    "id": "started-cybersecurity",
-    "year": "",
-    "title": "Started in Cybersecurity",
-    "description": "Began working in security, building the foundation in incident response, malware analysis, and defensive tooling that later shaped a focus on threat hunting."
+    "id": "persistent-systems",
+    "year": "2019 – 2020",
+    "title": "Security Researcher · Persistent Systems",
+    "description": "Performed full-stack vulnerability assessments and red-team penetration testing for enterprise clients, authoring risk-driven remediation reports. Recognised as a \"Standout Performer.\""
+  },
+  {
+    "id": "ltimindtree",
+    "year": "2020 – 2023",
+    "title": "Senior Threat Researcher · LTIMindtree (Microsoft XDR)",
+    "description": "Led threat detection and hunting for Microsoft XDR customers using KQL, custom YARA signatures, and MITRE ATT&CK across cloud-native and endpoint telemetry — building detections for pre-ransomware activity, loaders, and lateral movement."
   },
   {
     "id": "community-sessions",
@@ -12,39 +18,33 @@
     "description": "Delivered cyber security workshops and guest sessions at engineering colleges and universities — including KBC North Maharashtra University (Jalgaon) and Bharati Vidyapeeth's College of Engineering for Women (Pune)."
   },
   {
-    "id": "joined-microsoft",
-    "year": "",
-    "title": "Joined Microsoft",
-    "description": "Joined Microsoft, working with Microsoft Defender XDR and Microsoft Sentinel on detection engineering and threat hunting at scale."
+    "id": "hyland",
+    "year": "2023 – 2024",
+    "title": "Cloud Security Researcher III · Hyland",
+    "description": "Built a cloud Security Operations Center from the ground up — defining IR workflows, detection engineering, CSPM, and vulnerability management across hybrid AWS and Azure environments."
   },
   {
-    "id": "microsoft-publications",
-    "year": "",
-    "title": "First Microsoft Publication",
-    "description": "Began publishing security research through official Microsoft channels, including the Microsoft Security Blog and Microsoft Tech Community."
-  },
-  {
-    "id": "conference-speaker",
-    "year": "2026",
-    "title": "Conference Speaker",
-    "description": "Took the stage as a conference speaker, starting with CyberLab Con 2026, sharing threat hunting and detection engineering research with the community."
+    "id": "microsoft-dex",
+    "year": "2024 – Present",
+    "title": "Senior Threat Hunter · Microsoft — Defender Experts (DEX)",
+    "description": "Hunts nation-state actors and phishing/malware-as-a-service operations at scale across cloud, endpoint, and network telemetry for thousands of enterprise customers — turning every finding into durable, deployable KQL and YARA detections."
   },
   {
     "id": "open-source-contributions",
     "year": "",
     "title": "Open Source Contributions",
-    "description": "Started contributing to community open-source security projects, including LOLBAS and the LOLAI project, alongside maintaining a personal detection rules repository."
-  },
-  {
-    "id": "crta-certification",
-    "year": "",
-    "title": "Certified Red Team Analyst (CRTA)",
-    "description": "Earned the Certified Red Team Analyst (CRTA) credential from Cyberwarfare Labs, deepening offensive tradecraft to sharpen detection engineering and threat hunting."
+    "description": "Contributing to community open-source security projects — including a merged SigmaHQ detection rule, LOLBAS and the LOLAI project, and a published Exploit-DB GHDB dork — alongside a personal detection rules repository."
   },
   {
     "id": "ai-security-research",
     "year": "",
     "title": "AI Security Research",
-    "description": "Expanded research into AI security — mapping how living-off-the-land and adversarial techniques apply to AI systems and tooling."
+    "description": "Expanding research into AI security — mapping how living-off-the-land and adversarial techniques apply to AI systems and tooling, and building AI-assisted investigative workflows for threat hunting."
+  },
+  {
+    "id": "conference-speaker",
+    "year": "2026",
+    "title": "International Conference Speaker",
+    "description": "Sharing threat hunting and detection engineering research with the community on the conference stage, including SECCON 14 (Tokyo) and CyberLab Con 2026."
   }
 ]
