@@ -77,7 +77,11 @@ export default function Hero() {
                 </motion.p>
               </AnimatePresence>
             </div>
-            <p className="mt-2 font-mono text-[11px] italic text-ink-faint">
+            <p
+              onClick={() => window.dispatchEvent(new Event('arise'))}
+              className="mt-2 cursor-pointer select-none font-mono text-[11px] italic text-ink-faint transition-colors hover:text-signal-blue/70"
+              title="⟨ ? ⟩"
+            >
               — walking in the footsteps of Hunter Sung Jin-woo
             </p>
           </div>

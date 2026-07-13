@@ -1,6 +1,7 @@
 import SectionHeading from '@/components/SectionHeading';
 import Timeline from '@/components/Timeline';
 import SkillsCloud from '@/components/SkillsCloud';
+import StatusWindow from '@/components/StatusWindow';
 import GlassCard from '@/components/GlassCard';
 import Certifications from '@/components/Certifications';
 import FeaturedIn from '@/components/FeaturedIn';
@@ -43,7 +44,10 @@ export default function AboutPage() {
 
       <Reveal as="section">
         <SectionHeading eyebrow="Capabilities" title="Skills" />
-        <SkillsCloud />
+        <StatusWindow />
+        <div className="mt-10">
+          <SkillsCloud />
+        </div>
       </Reveal>
     </div>
   );

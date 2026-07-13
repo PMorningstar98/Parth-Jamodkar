@@ -1,0 +1,15 @@
+{
+  "level": 99,
+  "class": "Threat Hunter",
+  "rank": "S",
+  "rankNote": "National Level",
+  "title": "Hunts what others can't see",
+  "attributes": [
+    { "name": "Threat Hunting", "value": 98 },
+    { "name": "Detection Engineering", "value": 95 },
+    { "name": "Threat Intelligence", "value": 92 },
+    { "name": "Cloud Security", "value": 90 },
+    { "name": "Malware Analysis", "value": 88 },
+    { "name": "AI Security", "value": 85 }
+  ]
+}

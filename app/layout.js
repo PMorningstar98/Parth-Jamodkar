@@ -2,6 +2,7 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import AriseEasterEgg from '@/components/AriseEasterEgg';
 import site from '@/data/site.json';
 
 const inter = Inter({
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <AriseEasterEgg />
       </body>
     </html>
   );
