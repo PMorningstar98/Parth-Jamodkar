@@ -217,3 +217,20 @@ input:focus-visible,
 .status-dot {
   box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.15);
 }
+
+/* JS-independent stat-bar fill. Width falls back to --bar-w even if the
+   animation never runs, so bars are always visible. */
+.stat-bar {
+  width: var(--bar-w);
+  animation: bar-fill 0.9s ease-out both;
+  animation-delay: var(--bar-delay, 0s);
+}
+
+@keyframes bar-fill {
+  from { width: 0; }
+  to { width: var(--bar-w); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-bar { animation: none; }
+}

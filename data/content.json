@@ -1,9 +1,9 @@
 [
   {
     "id": "ms-blog-author-hub",
-    "type": "publication",
-    "title": "Microsoft Security Blog — Author Hub",
-    "description": "Author profile and full archive of security research articles published on the official Microsoft Security Blog.",
+    "type": "profile",
+    "title": "Microsoft Security Blog — Author Profile",
+    "description": "My author profile and full archive of security research articles on the official Microsoft Security Blog.",
     "url": "https://www.microsoft.com/en-us/security/blog/author/parth-jomadkar/",
     "source": "Microsoft Security Blog",
     "date": "",

@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import status from '@/data/status.json';
 
 function Corner({ className }) {
@@ -26,15 +25,11 @@ function Row({ label, value, tone }) {
 // A Solo-Leveling-style "System" status window — corner brackets, blue glow,
 // monospace — but the attributes are real security disciplines instead of
 // STR/AGI/INT. A quiet homage that also happens to be a useful capability view.
+// Rendered as plain markup (visible by default in the HTML); the bar fill is a
+// pure-CSS animation so nothing depends on client JS to become visible.
 export default function StatusWindow() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="relative mx-auto max-w-xl rounded-xl border border-signal-blue/25 bg-void/70 p-6 shadow-[0_0_40px_-8px_rgba(76,124,243,0.45)] backdrop-blur-sm sm:p-7"
-    >
+    <div className="relative mx-auto max-w-xl rounded-xl border border-signal-blue/25 bg-void/70 p-6 shadow-[0_0_40px_-8px_rgba(76,124,243,0.45)] backdrop-blur-sm sm:p-7">
       <Corner className="left-2 top-2 border-l-2 border-t-2" />
       <Corner className="right-2 top-2 border-r-2 border-t-2" />
       <Corner className="bottom-2 left-2 border-b-2 border-l-2" />
@@ -67,12 +62,9 @@ export default function StatusWindow() {
                 <span className="text-signal-blue">{attr.value}</span>
               </div>
               <div className="h-1.5 overflow-hidden rounded-full bg-line">
-                <motion.div
-                  className="h-full rounded-full bg-gradient-to-r from-signal-blue-dim to-signal-blue"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${attr.value}%` }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.9, ease: 'easeOut', delay: 0.15 + i * 0.08 }}
+                <div
+                  className="stat-bar h-full rounded-full bg-gradient-to-r from-signal-blue-dim to-signal-blue"
+                  style={{ '--bar-w': `${attr.value}%`, '--bar-delay': `${0.15 + i * 0.08}s` }}
                 />
               </div>
             </div>
@@ -83,6 +75,6 @@ export default function StatusWindow() {
           // the System has determined your class.
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 }

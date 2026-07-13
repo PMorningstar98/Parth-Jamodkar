@@ -41,7 +41,7 @@ export default function Hero() {
 
         <div className="mt-4 flex h-8 items-center font-mono text-lg text-ink-muted sm:text-xl">
           <span className="text-signal-blue">&gt;&nbsp;</span>
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" initial={false}>
             <motion.span
               key={roleIndex}
               initial={{ opacity: 0, y: 8 }}
@@ -64,7 +64,7 @@ export default function Hero() {
           <div className="mt-6 max-w-lg border-l-2 border-signal-violet/40 pl-4">
             <p className="eyebrow mb-1.5 text-signal-violet/80">// hunter&apos;s creed</p>
             <div className="flex min-h-[3rem] items-start">
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode="wait" initial={false}>
                 <motion.p
                   key={creedIndex}
                   initial={{ opacity: 0, y: 8 }}

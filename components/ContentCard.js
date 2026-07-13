@@ -2,6 +2,7 @@ import GlassCard from './GlassCard';
 
 const TYPE_META = {
   publication: { label: 'Publication', className: 'text-signal-blue border-signal-blue/40 bg-signal-blue/10' },
+  profile: { label: 'Profile', className: 'text-signal-cyan border-signal-cyan/40 bg-signal-cyan/10' },
   talk: { label: 'Talk', className: 'text-signal-violet border-signal-violet/40 bg-signal-violet/10' },
   opensource: { label: 'Open Source', className: 'text-signal-cyan border-signal-cyan/40 bg-signal-cyan/10' },
   blog: { label: 'Blog', className: 'text-ink-muted border-line bg-panel' },
