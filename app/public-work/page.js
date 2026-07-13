@@ -8,19 +8,26 @@ import content from '@/data/content.json';
 
 const FILTERS = [
   { key: 'all', label: 'All' },
+  { key: 'microsoft', label: 'Microsoft' },
   { key: 'publication', label: 'Publications' },
   { key: 'talk', label: 'Talks' },
   { key: 'opensource', label: 'Open Source' },
   { key: 'blog', label: 'Blog' },
 ];
 
+const matchesFilter = (item, key) => {
+  if (key === 'all') return true;
+  if (key === 'microsoft') return (item.source || '').startsWith('Microsoft');
+  return item.type === key;
+};
+
 export default function PublicWorkPage() {
   const [filter, setFilter] = useState('all');
 
-  const items = useMemo(() => {
-    if (filter === 'all') return content;
-    return content.filter((item) => item.type === filter);
-  }, [filter]);
+  const items = useMemo(
+    () => content.filter((item) => matchesFilter(item, filter)),
+    [filter]
+  );
 
   return (
     <div>
@@ -34,6 +41,8 @@ export default function PublicWorkPage() {
       <div className="mb-8 flex flex-wrap gap-2">
         {FILTERS.map((f) => {
           const active = filter === f.key;
+          const isMs = f.key === 'microsoft';
+          const count = content.filter((i) => matchesFilter(i, f.key)).length;
           return (
             <button
               key={f.key}
@@ -42,12 +51,14 @@ export default function PublicWorkPage() {
               className={`rounded-full border px-4 py-1.5 font-mono text-xs transition-colors ${
                 active
                   ? 'border-signal-blue/60 bg-signal-blue/10 text-signal-blue'
-                  : 'border-line text-ink-muted hover:border-signal-blue/40 hover:text-ink'
+                  : isMs
+                    ? 'border-signal-blue/30 text-ink hover:border-signal-blue/60 hover:text-signal-blue'
+                    : 'border-line text-ink-muted hover:border-signal-blue/40 hover:text-ink'
               }`}
             >
               {f.label}
               <span className={`ml-1.5 ${active ? 'text-signal-blue/70' : 'text-ink-faint'}`}>
-                {f.key === 'all' ? content.length : content.filter((i) => i.type === f.key).length}
+                {count}
               </span>
             </button>
           );
