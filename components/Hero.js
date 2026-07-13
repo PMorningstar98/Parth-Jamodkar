@@ -10,11 +10,20 @@ const DecodeRain = dynamic(() => import('./DecodeRain'), { ssr: false });
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
+  const [creedIndex, setCreedIndex] = useState(0);
 
   useEffect(() => {
     const id = setInterval(() => {
       setRoleIndex((i) => (i + 1) % site.roles.length);
     }, 2600);
+    return () => clearInterval(id);
+  }, []);
+
+  useEffect(() => {
+    if (!site.manifesto?.length) return undefined;
+    const id = setInterval(() => {
+      setCreedIndex((i) => (i + 1) % site.manifesto.length);
+    }, 4200);
     return () => clearInterval(id);
   }, []);
 
@@ -50,6 +59,29 @@ export default function Hero() {
         <p className="mt-6 max-w-lg text-lg text-ink-muted sm:text-xl">
           &ldquo;{site.tagline}&rdquo;
         </p>
+
+        {site.manifesto?.length ? (
+          <div className="mt-6 max-w-lg border-l-2 border-signal-violet/40 pl-4">
+            <p className="eyebrow mb-1.5 text-signal-violet/80">// hunter&apos;s creed</p>
+            <div className="flex min-h-[3rem] items-start">
+              <AnimatePresence mode="wait">
+                <motion.p
+                  key={creedIndex}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  className="font-mono text-sm italic leading-relaxed text-ink-muted sm:text-base"
+                >
+                  {site.manifesto[creedIndex]}
+                </motion.p>
+              </AnimatePresence>
+            </div>
+            <p className="mt-2 font-mono text-[11px] italic text-ink-faint">
+              — walking in the footsteps of Hunter Sung Jin-woo
+            </p>
+          </div>
+        ) : null}
 
         <div className="mt-9 flex flex-wrap gap-3">
           <Link
