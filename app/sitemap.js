@@ -1,5 +1,7 @@
 const siteUrl = 'https://parthjamodkar.com';
 
+export const dynamic = 'force-static';
+
 const STATIC_ROUTES = [
   '',
   'public-work',
