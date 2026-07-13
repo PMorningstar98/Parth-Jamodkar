@@ -6,6 +6,7 @@ import Timeline from '@/components/Timeline';
 import SkillsCloud from '@/components/SkillsCloud';
 import GlassCard from '@/components/GlassCard';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import Reveal from '@/components/Reveal';
 import content from '@/data/content.json';
 
 export default function HomePage() {
@@ -22,7 +23,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="py-16">
+      <Reveal as="section" className="py-16">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading
             eyebrow="Latest"
@@ -30,7 +31,7 @@ export default function HomePage() {
             description="Recent publications, talks, and open-source work — pulled straight from the same data that powers Public Work."
             className="mb-0"
           />
-          <Link href="/public-work" className="font-mono text-sm text-signal-blue hover:underline">
+          <Link href="/public-work" className="link-underline font-mono text-sm text-signal-blue">
             View all public work →
           </Link>
         </div>
@@ -39,9 +40,9 @@ export default function HomePage() {
             <ContentCard key={item.id} item={item} />
           ))}
         </div>
-      </section>
+      </Reveal>
 
-      <section className="py-16">
+      <Reveal as="section" className="py-16">
         <SectionHeading
           eyebrow="One place"
           title="Public work, aggregated"
@@ -53,21 +54,21 @@ export default function HomePage() {
           <StatTile label="Open Source Contributions" value={counts.opensource} accent="cyan" />
           <StatTile label="Blog Posts" value={counts.blog} accent="blue" />
         </div>
-      </section>
+      </Reveal>
 
-      <section className="py-16">
+      <Reveal as="section" className="py-16">
         <SectionHeading eyebrow="Career" title="Timeline" />
         <Timeline />
-      </section>
+      </Reveal>
 
-      <section className="py-16">
+      <Reveal as="section" className="py-16">
         <SectionHeading
           eyebrow="Capabilities"
           title="Skills"
           description="Tap any skill to see the research, publications, and repos where it shows up."
         />
         <SkillsCloud />
-      </section>
+      </Reveal>
     </>
   );
 }
