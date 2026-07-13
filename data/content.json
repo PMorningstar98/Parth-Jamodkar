@@ -178,5 +178,77 @@
     "categories": ["Threat Hunting", "Threat Intelligence"],
     "tags": ["Threat Hunting", "Threat Intelligence", "Getting Started"],
     "featured": true
+  },
+  {
+    "id": "sigma-vcruntime140-sideloading",
+    "type": "opensource",
+    "title": "Sigma Rule: Potential Vcruntime140 DLL Sideloading",
+    "description": "Reported a detection gap to the SigmaHQ project (issue #5825) that led to a merged Sigma rule detecting vcruntime140.dll side-loading — shipped in the Sigma April 2026 release.",
+    "url": "https://github.com/SigmaHQ/sigma/pull/5837",
+    "source": "GitHub · SigmaHQ",
+    "date": "2026-04-27",
+    "categories": ["Detection Engineering", "Threat Hunting"],
+    "tags": ["Sigma", "DLL Sideloading", "Detection Engineering"],
+    "featured": true
+  },
+  {
+    "id": "exploitdb-ghdb-struts-cve-2023-50164",
+    "type": "opensource",
+    "title": "Google Dork: Apache Struts 2.x Path Traversal (CVE-2023-50164)",
+    "description": "Published a Google Hacking Database (GHDB) dork on Exploit-DB to surface internet-exposed Apache Struts instances affected by the CVE-2023-50164 path-traversal vulnerability.",
+    "url": "https://www.exploit-db.com/ghdb/8398",
+    "source": "Exploit-DB · GHDB",
+    "date": "2023",
+    "categories": ["Threat Intelligence", "Detection Engineering"],
+    "tags": ["Google Dork", "OSINT", "CVE-2023-50164"],
+    "featured": false
+  },
+  {
+    "id": "csa-hsm-as-a-service",
+    "type": "publication",
+    "title": "HSM-as-a-Service: Use Cases, Considerations, and Best Practices",
+    "description": "Contributor and reviewer on the Cloud Security Alliance Cloud Key Management working-group publication covering the HSM-as-a-Service delivery model, security considerations, and vendor selection.",
+    "url": "https://cloudsecurityalliance.org/artifacts/hsm-as-a-service-use-cases-considerations-and-best-practices",
+    "source": "Cloud Security Alliance",
+    "date": "2024-04-03",
+    "categories": ["Cloud Security"],
+    "tags": ["Key Management", "HSM", "Contributor / Reviewer"],
+    "featured": false
+  },
+  {
+    "id": "csa-key-management-lifecycle",
+    "type": "publication",
+    "title": "Key Management Lifecycle Best Practices",
+    "description": "Contributor and reviewer on the Cloud Security Alliance publication detailing best practices across each phase of the cryptographic key management lifecycle.",
+    "url": "https://cloudsecurityalliance.org/artifacts/key-management-lifecycle-best-practices",
+    "source": "Cloud Security Alliance",
+    "date": "2023-12-19",
+    "categories": ["Cloud Security"],
+    "tags": ["Key Management", "Cryptography", "Contributor / Reviewer"],
+    "featured": false
+  },
+  {
+    "id": "workshop-nmu-jalgaon-2022",
+    "type": "talk",
+    "title": "Workshop: Career Avenues in Cyber Security — KBC NMU, Jalgaon",
+    "description": "Delivered a session on career avenues in cyber security at Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon. Felicitated by Dr. Sanjay Wadnere; recognised in the university's 2021–22 Annual Report.",
+    "url": "https://nmu.ac.in/Portals/54/Annual%20Report/2021-22.pdf",
+    "source": "KBC North Maharashtra University",
+    "date": "2022-05-21",
+    "categories": ["Security Education"],
+    "tags": ["Workshop", "Guest Session", "Public Speaking"],
+    "featured": false
+  },
+  {
+    "id": "workshop-bvcoew-pune",
+    "type": "talk",
+    "title": "Workshop: Ethical Hacking & Cyber Security — Bharati Vidyapeeth COEW, Pune",
+    "description": "Resource person for a hands-on Ethical Hacking and Cyber Security workshop at Bharati Vidyapeeth's College of Engineering for Women, Pune — listed among the college's major technical activities.",
+    "url": "https://coewpune.bharatividyapeeth.edu/media/pdf/7-3-6_170124.pdf",
+    "source": "Bharati Vidyapeeth COEW",
+    "date": "",
+    "categories": ["Security Education"],
+    "tags": ["Workshop", "Ethical Hacking", "Public Speaking"],
+    "featured": false
   }
 ]

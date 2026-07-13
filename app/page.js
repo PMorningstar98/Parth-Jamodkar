@@ -6,6 +6,7 @@ import Timeline from '@/components/Timeline';
 import SkillsCloud from '@/components/SkillsCloud';
 import GlassCard from '@/components/GlassCard';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import FeaturedIn from '@/components/FeaturedIn';
 import Reveal from '@/components/Reveal';
 import content from '@/data/content.json';
 
@@ -59,6 +60,15 @@ export default function HomePage() {
       <Reveal as="section" className="py-16">
         <SectionHeading eyebrow="Career" title="Timeline" />
         <Timeline />
+      </Reveal>
+
+      <Reveal as="section" className="py-16">
+        <SectionHeading
+          eyebrow="Recognition"
+          title="Featured in"
+          description="Where my research has been cited, syndicated, or featured across the security community."
+        />
+        <FeaturedIn />
       </Reveal>
 
       <Reveal as="section" className="py-16">

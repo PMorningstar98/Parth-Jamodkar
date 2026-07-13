@@ -1,0 +1,16 @@
+[
+  {
+    "id": "paracyberbellum-300",
+    "source": "ParaCyberBellum",
+    "title": "Cited in the ParaCyberBellum threat-intel review (Issue #300)",
+    "description": "My Microsoft analysis of the EmEditor supply-chain compromise was curated and referenced in the ParaCyberBellum security newsletter.",
+    "url": "https://www.paracyberbellum.io/resources/review/issue/300"
+  },
+  {
+    "id": "joepearce-aggregator",
+    "source": "joepearce.com",
+    "title": "Syndicated on the joepearce.com security aggregator",
+    "description": "My research feed was added as a curated source on the joepearce.com cybersecurity content aggregator.",
+    "url": "https://joepearce.com/home/aggregator/sources/42"
+  }
+]

@@ -13,9 +13,9 @@ export default function TalksPage() {
   return (
     <div>
       <SectionHeading
-        eyebrow="Talks"
-        title="Conference talks"
-        description="Speaking engagements, past and upcoming. Add a new entry to data/content.json ahead of each conference."
+        eyebrow="Talks & Sessions"
+        title="Talks & sessions"
+        description="Conference talks, guest lectures, and hands-on workshops — past and upcoming."
       />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (

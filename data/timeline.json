@@ -6,6 +6,12 @@
     "description": "Began working in security, building the foundation in incident response, malware analysis, and defensive tooling that later shaped a focus on threat hunting."
   },
   {
+    "id": "community-sessions",
+    "year": "2022",
+    "title": "Community Workshops & Guest Sessions",
+    "description": "Delivered cyber security workshops and guest sessions at engineering colleges and universities — including KBC North Maharashtra University (Jalgaon) and Bharati Vidyapeeth's College of Engineering for Women (Pune)."
+  },
+  {
     "id": "joined-microsoft",
     "year": "",
     "title": "Joined Microsoft",
@@ -28,6 +34,12 @@
     "year": "",
     "title": "Open Source Contributions",
     "description": "Started contributing to community open-source security projects, including LOLBAS and the LOLAI project, alongside maintaining a personal detection rules repository."
+  },
+  {
+    "id": "crta-certification",
+    "year": "",
+    "title": "Certified Red Team Analyst (CRTA)",
+    "description": "Earned the Certified Red Team Analyst (CRTA) credential from Cyberwarfare Labs, deepening offensive tradecraft to sharpen detection engineering and threat hunting."
   },
   {
     "id": "ai-security-research",
