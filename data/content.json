@@ -108,15 +108,75 @@
     "featured": false
   },
   {
-    "id": "medium-blog",
+    "id": "medium-honeypots",
     "type": "blog",
-    "title": "Medium — Personal Research Blog",
-    "description": "Long-form personal writing on threat hunting, detection engineering, and security research, published outside of official Microsoft channels.",
-    "url": "https://medium.com/@parth7378785501",
+    "title": "Leveraging Honeypots for Enhanced Cybersecurity: A Quick Overview",
+    "description": "How deception technology and honeypots can surface attacker activity early, generate high-signal detections, and enrich threat intelligence.",
+    "url": "https://medium.com/@parth7378785501/leveraging-honeypots-for-enhanced-cybersecurity-quick-overview-4385815959f9",
     "source": "Medium",
-    "date": "",
-    "categories": ["Threat Hunting", "Detection Engineering"],
-    "tags": ["Threat Hunting"],
+    "date": "2023-09-20",
+    "categories": ["Threat Hunting", "Threat Intelligence"],
+    "tags": ["Honeypots", "Deception", "Threat Hunting"],
+    "featured": false
+  },
+  {
+    "id": "medium-gcp-audit-logging",
+    "type": "blog",
+    "title": "How to Use Cloud Audit Logging for Threat Hunting in GCP",
+    "description": "A practical walkthrough of using Google Cloud audit logs to hunt for suspicious activity and build cloud-native detections in GCP environments.",
+    "url": "https://medium.com/@parth7378785501/how-to-use-cloud-audit-logging-for-threat-hunting-in-gcp-72f242ec08b4",
+    "source": "Medium",
+    "date": "2023-08-12",
+    "categories": ["Cloud Security", "Threat Hunting"],
+    "tags": ["GCP", "Cloud Security", "Threat Hunting"],
+    "featured": false
+  },
+  {
+    "id": "medium-dga-shannon-entropy",
+    "type": "blog",
+    "title": "DGA Domain Detection with Shannon Entropy Analysis",
+    "description": "Using Shannon entropy to flag algorithmically generated (DGA) domains and turn the technique into a repeatable detection for C2 infrastructure.",
+    "url": "https://medium.com/@parth7378785501/dga-domain-detection-with-shannon-entropy-analysis-d780dc7d4e35",
+    "source": "Medium",
+    "date": "2023-08-07",
+    "categories": ["Detection Engineering", "Threat Hunting"],
+    "tags": ["DGA", "Entropy", "Detection Engineering"],
+    "featured": false
+  },
+  {
+    "id": "medium-privacy-os-comparison",
+    "type": "blog",
+    "title": "Tails vs. Qubes OS vs. Whonix: Choosing the Right Privacy-Focused OS",
+    "description": "A comparison of Tails, Qubes OS, and Whonix across isolation, anonymity, and threat models to help pick the right privacy-focused operating system.",
+    "url": "https://medium.com/@parth7378785501/tails-vs-qubes-os-vs-whonix-choose-the-right-privacy-focused-os-for-your-needs-cfc0c4a7dcdc",
+    "source": "Medium",
+    "date": "2023-07-31",
+    "categories": ["Privacy & Anonymity"],
+    "tags": ["Privacy", "Qubes OS", "Tor", "Anonymity"],
+    "featured": false
+  },
+  {
+    "id": "medium-dlp-splunk-correlation",
+    "type": "blog",
+    "title": "The Power of Correlation: Strengthening Security with DLP and Threat Hunting in Splunk",
+    "description": "Correlating DLP signals with threat-hunting queries in Splunk to catch data exfiltration that either source would miss on its own.",
+    "url": "https://medium.com/@parth7378785501/the-power-of-correlation-strengthening-security-with-dlp-and-threat-hunting-in-splunk-302b563496a5",
+    "source": "Medium",
+    "date": "2023-06-23",
+    "categories": ["Threat Hunting", "Detection Engineering", "Threat Intelligence"],
+    "tags": ["Splunk", "DLP", "Correlation"],
+    "featured": false
+  },
+  {
+    "id": "medium-threat-hunting-intelligence-path",
+    "type": "blog",
+    "title": "Unleashing the Power of Threat Hunting and Threat Intelligence",
+    "description": "A foundational guide to threat hunting and threat intelligence — how they reinforce each other and a path for getting started in the field.",
+    "url": "https://medium.com/@parth7378785501/unleashing-the-power-of-threat-hunting-and-threat-intelligence-your-path-to-becoming-a-cyber-865cc2db1b41",
+    "source": "Medium",
+    "date": "2023-06-11",
+    "categories": ["Threat Hunting", "Threat Intelligence"],
+    "tags": ["Threat Hunting", "Threat Intelligence", "Getting Started"],
     "featured": true
   }
 ]
