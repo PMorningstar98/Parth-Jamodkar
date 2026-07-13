@@ -9,14 +9,15 @@ const TYPE_META = {
 
 export default function ContentCard({ item }) {
   const meta = TYPE_META[item.type] || TYPE_META.blog;
+  const isLink = Boolean(item.url);
+  const linkProps = isLink
+    ? { as: 'a', href: item.url, target: '_blank', rel: 'noreferrer' }
+    : { as: 'div' };
 
   return (
     <GlassCard
-      as="a"
-      href={item.url}
-      target="_blank"
-      rel="noreferrer"
-      hover
+      {...linkProps}
+      hover={isLink}
       className="group flex h-full flex-col no-underline"
     >
       <div className="mb-3 flex flex-wrap items-center gap-2">
@@ -29,7 +30,9 @@ export default function ContentCard({ item }) {
 
       <h3 className="mb-2 text-base font-semibold text-ink transition-colors group-hover:text-signal-blue sm:text-lg">
         {item.title}
-        <span aria-hidden="true" className="ml-1.5 inline-block text-ink-faint transition-transform group-hover:translate-x-0.5 group-hover:text-signal-blue">↗</span>
+        {isLink && (
+          <span aria-hidden="true" className="ml-1.5 inline-block text-ink-faint transition-transform group-hover:translate-x-0.5 group-hover:text-signal-blue">↗</span>
+        )}
       </h3>
 
       {item.description && (

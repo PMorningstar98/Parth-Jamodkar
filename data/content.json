@@ -286,5 +286,16 @@
     "categories": ["Threat Hunting", "Threat Intelligence"],
     "tags": ["Insider Threat", "DPRK", "Public Speaking"],
     "featured": true
+  },
+  {
+    "id": "cve-2025-30406-hunt",
+    "type": "publication",
+    "title": "Active Exploitation Hunt — CVE-2025-30406",
+    "description": "Microsoft Defender Experts (DEX) threat hunt into in-the-wild exploitation of CVE-2025-30406 (CVSS 9.8), an unauthenticated RCE in Gladinet CentreStack and Triofox driven by a hardcoded cryptographic key. Tracked hands-on-keyboard intrusion, backdoor persistence, and post-exploitation activity following the vendor patch (Apr 3, 2025) and CISA KEV listing (Apr 8, 2025) — turning findings into deployable detections. Internal customer hunt report; not publicly published.",
+    "source": "Microsoft Defender Experts",
+    "date": "2025",
+    "categories": ["Threat Hunting", "Threat Intelligence"],
+    "tags": ["CVE-2025-30406", "RCE", "Post-Exploitation", "KQL"],
+    "featured": false
   }
 ]
