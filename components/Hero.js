@@ -119,6 +119,10 @@ export default function Hero() {
       <div className="relative h-72 overflow-hidden rounded-2xl border border-line-soft bg-panel/60 shadow-glass sm:h-96 lg:h-[26rem]">
         <DecodeRain className="absolute inset-0 h-full w-full" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent" />
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{ background: 'radial-gradient(115% 80% at 50% 28%, transparent 52%, rgba(5,6,15,0.82) 100%)' }}
+        />
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-signal-blue/10" />
         <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-line-soft bg-void/70 px-3 py-1 font-mono text-[11px] text-ink-muted backdrop-blur-sm">
           <span className="h-1.5 w-1.5 rounded-full bg-signal-blue" /> known
