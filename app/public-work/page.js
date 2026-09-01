@@ -9,15 +9,19 @@ import content from '@/data/content.json';
 const FILTERS = [
   { key: 'all', label: 'All' },
   { key: 'microsoft', label: 'Microsoft' },
-  { key: 'publication', label: 'Publications' },
+  { key: 'csa', label: 'Cloud Security Alliance' },
+  { key: 'bhis', label: 'Black Hills InfoSec' },
+  { key: 'medium', label: 'Medium' },
   { key: 'talk', label: 'Talks' },
   { key: 'opensource', label: 'Open Source' },
-  { key: 'blog', label: 'Blog' },
 ];
 
 const matchesFilter = (item, key) => {
   if (key === 'all') return true;
   if (key === 'microsoft') return (item.source || '').startsWith('Microsoft');
+  if (key === 'csa') return item.source === 'Cloud Security Alliance';
+  if (key === 'bhis') return item.source === 'Black Hills Information Security';
+  if (key === 'medium') return item.source === 'Medium';
   return item.type === key;
 };
 
@@ -34,14 +38,13 @@ export default function PublicWorkPage() {
       <SectionHeading
         eyebrow="One index"
         title="Public work"
-        description="Everything published in one place — Microsoft security articles, Microsoft Community Hub posts, conference talks, GitHub repositories, merged pull requests, and Medium posts. No more checking five different sites."
+        description="Browse work by publisher — Microsoft, Cloud Security Alliance, Black Hills Information Security, and Medium — alongside conference talks and open-source contributions."
         gradient
       />
 
       <div className="mb-8 flex flex-wrap gap-2">
         {FILTERS.map((f) => {
           const active = filter === f.key;
-          const isMs = f.key === 'microsoft';
           const count = content.filter((i) => matchesFilter(i, f.key)).length;
           return (
             <button
@@ -51,9 +54,7 @@ export default function PublicWorkPage() {
               className={`rounded-full border px-4 py-1.5 font-mono text-xs transition-colors ${
                 active
                   ? 'border-signal-blue/60 bg-signal-blue/10 text-signal-blue'
-                  : isMs
-                    ? 'border-signal-blue/30 text-ink hover:border-signal-blue/60 hover:text-signal-blue'
-                    : 'border-line text-ink-muted hover:border-signal-blue/40 hover:text-ink'
+                  : 'border-line text-ink-muted hover:border-signal-blue/40 hover:text-ink'
               }`}
             >
               {f.label}

@@ -1,17 +1,5 @@
 [
   {
-    "id": "ms-blog-author-hub",
-    "type": "profile",
-    "title": "Microsoft Security Blog — Author Profile",
-    "description": "My author profile and full archive of security research articles on the official Microsoft Security Blog.",
-    "url": "https://www.microsoft.com/en-us/security/blog/author/parth-jomadkar/",
-    "source": "Microsoft Security Blog",
-    "date": "",
-    "categories": ["Threat Hunting", "Detection Engineering"],
-    "tags": ["Microsoft Defender XDR", "Threat Hunting"],
-    "featured": true
-  },
-  {
     "id": "ms-community-hub",
     "type": "publication",
     "title": "Photo ZIP Campaign Targeting the Hospitality Industry Delivers a Node.js Implant for Persistent Access",
