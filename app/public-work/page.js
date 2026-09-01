@@ -4,7 +4,9 @@ import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import SectionHeading from '@/components/SectionHeading';
 import ContentCard from '@/components/ContentCard';
+import GlassCard from '@/components/GlassCard';
 import content from '@/data/content.json';
+import site from '@/data/site.json';
 
 const FILTERS = [
   { key: 'all', label: 'All' },
@@ -41,6 +43,32 @@ export default function PublicWorkPage() {
         description="Browse work by publisher — Microsoft, Cloud Security Alliance, Black Hills Information Security, and Medium — alongside conference talks and open-source contributions."
         gradient
       />
+
+      <GlassCard
+        as="a"
+        href={site.social.microsoftBlog}
+        target="_blank"
+        rel="noreferrer"
+        className="group mb-8 flex items-center justify-between gap-5 no-underline"
+      >
+        <div>
+          <p className="mb-1 font-mono text-xs uppercase tracking-wide text-signal-cyan">
+            Official author profile
+          </p>
+          <h2 className="text-lg font-semibold text-ink group-hover:text-signal-blue">
+            Microsoft Security Blog
+          </h2>
+          <p className="mt-1 text-sm text-ink-muted">
+            Browse my complete author archive and published Microsoft security research.
+          </p>
+        </div>
+        <span
+          aria-hidden="true"
+          className="shrink-0 font-mono text-xl text-signal-blue transition-transform group-hover:translate-x-1"
+        >
+          →
+        </span>
+      </GlassCard>
 
       <div className="mb-8 flex flex-wrap gap-2">
         {FILTERS.map((f) => {
