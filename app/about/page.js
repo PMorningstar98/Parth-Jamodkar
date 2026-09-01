@@ -36,8 +36,8 @@ export default function AboutPage() {
       <Reveal as="section">
         <SectionHeading
           eyebrow="Recognition"
-          title="Featured in"
-          description="Where my research has been cited, syndicated, or featured by the wider security community."
+          title="Research recognition"
+          description="Accepted research, citations, syndication, and other recognition from the wider security community."
         />
         <FeaturedIn />
       </Reveal>

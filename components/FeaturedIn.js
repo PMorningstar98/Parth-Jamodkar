@@ -18,9 +18,14 @@ export default function FeaturedIn() {
         >
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span className="rounded-full border border-signal-cyan/40 bg-signal-cyan/10 px-2.5 py-0.5 font-mono text-[11px] uppercase tracking-wide text-signal-cyan">
-              Featured In
+              {item.label || 'Featured In'}
             </span>
             <span className="font-mono text-[11px] text-ink-faint">{item.source}</span>
+            {item.status ? (
+              <span className="rounded-full border border-line px-2.5 py-0.5 font-mono text-[11px] text-ink-muted">
+                {item.status}
+              </span>
+            ) : null}
           </div>
           <h3 className="mb-2 text-base font-semibold text-ink transition-colors group-hover:text-signal-blue">
             {item.title}
