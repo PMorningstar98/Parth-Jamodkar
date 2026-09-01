@@ -9,15 +9,7 @@ import site from '@/data/site.json';
 const DecodeRain = dynamic(() => import('./DecodeRain'), { ssr: false });
 
 export default function Hero() {
-  const [roleIndex, setRoleIndex] = useState(0);
   const [creedIndex, setCreedIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setRoleIndex((i) => (i + 1) % site.roles.length);
-    }, 2600);
-    return () => clearInterval(id);
-  }, []);
 
   useEffect(() => {
     if (!site.manifesto?.length) return undefined;
@@ -39,20 +31,9 @@ export default function Hero() {
           <span className="text-gradient-animated">{site.name}</span>
         </h1>
 
-        <div className="mt-4 flex h-8 items-center font-mono text-lg text-ink-muted sm:text-xl">
+        <div className="mt-4 flex items-start font-mono text-base text-ink-muted sm:text-lg">
           <span className="text-signal-blue">&gt;&nbsp;</span>
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.span
-              key={roleIndex}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.32, ease: 'easeOut' }}
-              className="text-ink"
-            >
-              {site.roles[roleIndex]}
-            </motion.span>
-          </AnimatePresence>
+          <span className="text-ink">{site.currentTitle}</span>
           <span className="prompt-caret" />
         </div>
 

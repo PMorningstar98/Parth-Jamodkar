@@ -2,13 +2,11 @@ import Link from 'next/link';
 import Hero from '@/components/Hero';
 import SectionHeading from '@/components/SectionHeading';
 import ContentCard from '@/components/ContentCard';
-import Timeline from '@/components/Timeline';
-import SkillsCloud from '@/components/SkillsCloud';
 import GlassCard from '@/components/GlassCard';
 import AnimatedCounter from '@/components/AnimatedCounter';
-import FeaturedIn from '@/components/FeaturedIn';
 import Reveal from '@/components/Reveal';
 import content from '@/data/content.json';
+import site from '@/data/site.json';
 
 export default function HomePage() {
   const featured = content.filter((item) => item.featured).slice(0, 3);
@@ -23,6 +21,19 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+
+      <Reveal as="section" className="py-16">
+        <SectionHeading eyebrow="Bio" title="The hunt behind the work" />
+        <GlassCard hover={false} className="max-w-4xl">
+          <p className="text-base leading-relaxed text-ink-muted sm:text-lg">{site.bio}</p>
+          <Link
+            href="/about"
+            className="mt-5 inline-block font-mono text-sm text-signal-blue hover:underline"
+          >
+            More about my background →
+          </Link>
+        </GlassCard>
+      </Reveal>
 
       <Reveal as="section" className="py-16">
         <div className="flex flex-wrap items-end justify-between gap-4">
@@ -57,28 +68,6 @@ export default function HomePage() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="py-16">
-        <SectionHeading eyebrow="Career" title="Timeline" />
-        <Timeline />
-      </Reveal>
-
-      <Reveal as="section" className="py-16">
-        <SectionHeading
-          eyebrow="Recognition"
-          title="Featured in"
-          description="Where my research has been cited, syndicated, or featured across the security community."
-        />
-        <FeaturedIn />
-      </Reveal>
-
-      <Reveal as="section" className="py-16">
-        <SectionHeading
-          eyebrow="Capabilities"
-          title="Skills"
-          description="Tap any skill to see the research, publications, and repos where it shows up."
-        />
-        <SkillsCloud />
-      </Reveal>
     </>
   );
 }

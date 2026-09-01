@@ -2,8 +2,10 @@
   "name": "Parth Jamodkar",
   "shortName": "P. Jamodkar",
   "initials": "PJ",
+  "currentTitle": "Senior Threat Hunter · Microsoft — Defender Experts (DEX)",
   "roles": ["Threat Hunter", "Security Researcher", "Detection Engineer"],
   "tagline": "Hunting for knowns and unknowns.",
+  "bio": "I am a Senior Threat Hunter at Microsoft, uncovering nation-state and cybercrime activity across cloud, endpoint, and network telemetry. Drawing on experience in offensive security, threat intelligence, and insider-threat hunting, I follow the traces adversaries intend to erase and turn findings into practical KQL and YARA detections. I hunt for the known and the unknown, sharing what I learn through Microsoft security publications, open source, and conference talks.",
   "manifesto": [
     "Hunters are born to hunt.",
     "Every network is a world where survival is all that matters.",
@@ -26,10 +28,6 @@
     { "label": "Home", "href": "/" },
     { "label": "Public Work", "href": "/public-work" },
     { "label": "Research", "href": "/research" },
-    { "label": "Publications", "href": "/publications" },
-    { "label": "Talks", "href": "/talks" },
-    { "label": "Open Source", "href": "/open-source" },
-    { "label": "Blog", "href": "/blog" },
     { "label": "About", "href": "/about" },
     { "label": "Contact", "href": "/contact" }
   ]
