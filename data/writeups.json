@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "dissecting-amos-stealer-packet-by-packet",
+    "title": "Dissecting an AMOS Stealer infection, packet by packet",
+    "date": "2026-10-21",
+    "dateLabel": "October 2026",
+    "readTime": "14 min read",
+    "hook": "A Friday-night capture, 19 minutes of traffic, one very fake Claude Code ad — and the byte-level proof of how a single paste emptied a Mac.",
+    "tags": ["macos", "stealer", "network-analysis", "clickfix"],
+    "cover": "/writeups/amos-stealer/banner.jpg",
+    "coverAlt": "Packet waveform banner — Google search for Claude Code, a Mac, and exfiltrated archives"
+  }
+]
