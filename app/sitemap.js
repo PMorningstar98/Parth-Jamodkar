@@ -5,6 +5,8 @@ export const dynamic = 'force-static';
 const STATIC_ROUTES = [
   '',
   'public-work',
+  'writeups',
+  'writeups/dissecting-amos-stealer-packet-by-packet',
   'research',
   'publications',
   'talks',
