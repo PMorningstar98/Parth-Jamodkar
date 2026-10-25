@@ -7,6 +7,8 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import Reveal from '@/components/Reveal';
 import content from '@/data/content.json';
 import site from '@/data/site.json';
+import writeups from '@/data/writeups.json';
+import WriteupCard from '@/components/WriteupCard';
 
 export default function HomePage() {
   const featured = content.filter((item) => item.featured).slice(0, 3);
@@ -50,6 +52,25 @@ export default function HomePage() {
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((item) => (
             <ContentCard key={item.id} item={item} />
+          ))}
+        </div>
+      </Reveal>
+
+      <Reveal as="section" className="py-16">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <SectionHeading
+            eyebrow="Deep dives"
+            title="Latest write-up"
+            description="Long-form analysis hosted here — packet evidence, decoding intermediates, and the detection math."
+            className="mb-0"
+          />
+          <Link href="/writeups" className="link-underline font-mono text-sm text-signal-blue">
+            All write-ups →
+          </Link>
+        </div>
+        <div className="mt-8 grid gap-5 sm:grid-cols-2">
+          {writeups.slice(0, 2).map((item) => (
+            <WriteupCard key={item.slug} item={item} />
           ))}
         </div>
       </Reveal>
