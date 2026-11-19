@@ -9,5 +9,16 @@
     "tags": ["macos", "stealer", "network-analysis", "clickfix"],
     "cover": "/writeups/amos-stealer/banner.jpg",
     "coverAlt": "Packet waveform banner — Google search for Claude Code, a Mac, and exfiltrated archives"
+  },
+  {
+    "slug": "from-challan-sms-to-exposed-botnet-panel",
+    "title": "From a Challan SMS to an Exposed Botnet Panel",
+    "date": "2026-11-19",
+    "dateLabel": "November 2026",
+    "readTime": "18 min read",
+    "hook": "A fake e-challan text, a Firebase project with no lock on the door, 3,789 infected phones inside — and the one abuse report that made the whole database disappear.",
+    "tags": ["android", "smishing", "firebase", "botnet", "threat-hunting"],
+    "cover": "/writeups/nexuspanel-challan-botnet/banner.svg",
+    "coverAlt": "Terminal-style banner — an unauthenticated curl against the bot operator's Firebase returns 200 OK"
   }
 ]

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f6feb"/>
+      <stop offset="1" stop-color="#8957e5"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="60" y="120" font-family="monospace" font-size="26" fill="#3fb950">$ curl https://ghostx-panel-default-rtdb.firebaseio.com/.json</text>
+  <text x="60" y="165" font-family="monospace" font-size="26" fill="#8b949e">{ "clients": ..., "devices": ... }</text>
+  <text x="60" y="210" font-family="monospace" font-size="26" fill="#3fb950">200 OK — no auth required</text>
+  <text x="60" y="330" font-family="sans-serif" font-weight="bold" font-size="58" fill="#f0f6fc">From a Challan SMS to an</text>
+  <text x="60" y="400" font-family="sans-serif" font-weight="bold" font-size="58" fill="#f0f6fc">Exposed Botnet Panel</text>
+  <text x="60" y="470" font-family="sans-serif" font-size="30" fill="#8b949e">NexusPanel: 3,789 bots, one readable Firebase,</text>
+  <text x="60" y="512" font-family="sans-serif" font-size="30" fill="#8b949e">and the takedown that followed</text>
+  <text x="60" y="580" font-family="monospace" font-size="22" fill="#6e7681">November 2026 · Android · smishing · threat hunting</text>
+</svg>
