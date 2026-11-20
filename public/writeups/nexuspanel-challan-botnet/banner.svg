@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#0d1117"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#g)" opacity="0.25"/>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1f6feb"/>
@@ -11,7 +12,7 @@
   </defs>
   <rect width="1200" height="630" fill="url(#grid)"/>
   <text x="60" y="120" font-family="monospace" font-size="26" fill="#3fb950">$ curl https://ghostx-panel-default-rtdb.firebaseio.com/.json</text>
-  <text x="60" y="165" font-family="monospace" font-size="26" fill="#8b949e">{ "clients": ..., "devices": ... }</text>
+  <text x="60" y="165" font-family="monospace" font-size="26" fill="#8b949e">{ "clients": ..., "devices": ..., }</text>
   <text x="60" y="210" font-family="monospace" font-size="26" fill="#3fb950">200 OK — no auth required</text>
   <text x="60" y="330" font-family="sans-serif" font-weight="bold" font-size="58" fill="#f0f6fc">From a Challan SMS to an</text>
   <text x="60" y="400" font-family="sans-serif" font-weight="bold" font-size="58" fill="#f0f6fc">Exposed Botnet Panel</text>
